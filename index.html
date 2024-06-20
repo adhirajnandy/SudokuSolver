@@ -4,14 +4,66 @@
     <script type="text/javascript" src="sudoku.js"></script>
     <script type="text/javascript" src="analytics.js"></script>
     <style type="text/css">
-        body{ font-family: Calibri, sans-serif; }
-        #container{ text-align: center; }
-        table{ border-collapse: collapse; font-size: 2em; margin: 0 auto; }
-        colgroup, tbody{ border: solid medium; }
-        td{ border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0;}
-        button{ margin-top: 15px; font-size: 1.5em; }
-        padd{padding-bottom: 100px;}
-    </style>
+      body {
+          font-family: 'Calibri', sans-serif;
+          background-color: #f2f2f2;
+          margin: 0;
+          padding: 20px;
+      }
+      #container {
+          text-align: center;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          padding: 20px;
+          max-width: 600px;
+          margin: 0 auto;
+      }
+      h1 {
+          font-size: 2.5em;
+          color: #333;
+          margin-bottom: 20px;
+          text-transform: uppercase;
+          font-weight: bold;
+      }
+      table {
+          border-collapse: collapse;
+          font-size: 1.8em;
+          margin: 0 auto;
+          margin-top: 20px;
+      }
+      colgroup, tbody {
+          border: solid 2px #ddd;
+      }
+      td {
+          border: solid 1px #ccc;
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          padding: 5px;
+      }
+      button {
+          margin-top: 15px;
+          font-size: 1.8em;
+          padding: 10px 20px;
+          border: none;
+          background-color: #4CAF50;
+          color: white;
+          cursor: pointer;
+          border-radius: 4px;
+          transition: all 0.3s ease; /* Apply transition to all properties */
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add shadow for depth */
+      }
+      button:hover {
+          background-color: #45a049;
+          transform: scale(1.05); /* Scale up button on hover */
+          box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Enhance shadow on hover */
+      }
+      button:active {
+          transform: translateY(1px);
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Reduce shadow on click */
+      }
+  </style>
 </head>
 <body>
     <div id="container">
